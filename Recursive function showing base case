@@ -1,1 +1,30 @@
  
+"""
+def factorial(n):
+    if n == 0:
+        return 1  # Base case: 0! = 1
+    else:
+        return n * factorial(n - 1)  # Recursive case: n! = n * (n-1)!
+    
+result = factorial(5)  # Calculates 5!
+print(result)  # Output: 120
+
+#5!=5⋅4⋅3⋅2⋅1=120
+
+#So, 
+#5! is equal to 120.
+"""
+def Factorial(numin):
+    if numin > 1:
+        return numin * Factorial(numin-1)
+    else:
+        return 1
+              
+              
+ans = Factorial(5)
+print(ans)
+    
+
+
+
+
