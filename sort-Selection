@@ -7,5 +7,7 @@ for index in range(len(myList)-1):
   if nextMinValue < myList[index]:
       nextMinIndex = myList.index(nextMinValue)
       myList[nextMinIndex] = myList[index]
+      print("nextminvalue", nextMinValue,"myList[index]",myList[index])
       myList[index]= nextMinValue
-print(myList)
+      
+print(myList
