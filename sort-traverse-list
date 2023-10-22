@@ -1,0 +1,6 @@
+myList = [85,24,63,45,17,31,96,50]
+print(myList)
+print("min",min(myList))
+print("max",max(myList))
+for index in range(len(myList)-1):
+  print ("myList[",index,"]",myList[index], "Index", index)
