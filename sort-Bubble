@@ -1,10 +1,17 @@
-myList = [85,24,63,45,17,31,96,50]
+#myList = [85,24,63,45,17,31,96,50]
+#myList = [2,8,5,3,9,4,1]
+#myList=[88, 46, 25, 11, 18, 11, 22]
+myList=[7,3,9,1,4]  #Ord Level Paper
+passct=0
 for outerIndex in range(len(myList)-1):
     print(myList, "OuterIndex ", outerIndex)
     choice = input("Enter ")
+    passct = passct+1
     for index in range(len(myList)-1):
+        print(myList, "OuterIndex ", outerIndex, "index", index)
         if myList[index] > myList[index+1]:
             tempValue = myList[index]
             myList[index] = myList[index + 1]
             myList[index+1] = tempValue
+            print(myList, "Pass",passct)
 print(myList)
