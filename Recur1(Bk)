@@ -1,0 +1,8 @@
+#LO 2.9 Recursive sample code book page 207/208
+def Factorial(numin):
+    if numin > 1:
+        return numin * Factorial(numin-1)
+    else:
+        return 1            
+ans = Factorial(5)
+print(ans)
