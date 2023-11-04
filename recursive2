@@ -1,0 +1,8 @@
+# LO 2.9 sample recursive function used in quiz and also Nove exam paper 6th yr
+def mystery(n):
+    if n == 0:
+          return 1
+    return n * mystery(n - 1)
+
+result = mystery(4)
+print(result)
