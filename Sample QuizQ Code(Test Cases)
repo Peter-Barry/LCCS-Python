@@ -1,10 +1,21 @@
 def max_num(x, y, z):
     if x > y and x > z:
-        return x
+        print("z ",x,y,z)
+        return x #6,4,1
     elif y > x and y > z:
-        return y
+        print("y ",x,y,z)
+        return y #2,4,1
+    
     else:
-        return z
+        print("z ",x,y,z)
+        return z #1,1,1
 
-result = max_num(2, 4, 1)
+
+# returns z
+result = max_num(1, 1, 1)
+# returns y
+#result = max_num(2, 4, 1)
+# returns x
+#result = max_num(6, 4, 1)
+
 print(result)
