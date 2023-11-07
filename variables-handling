@@ -1,0 +1,67 @@
+#input
+stringin = input("enter some  input. ")
+intin =int(input("enter numer input "))
+print (type(stringin))
+print (type(intin))
+#assignments
+x = 5
+y = "Peter"
+z = 5.0
+t = True
+print(x," ",y, " ",z, " ", t)
+print(type(x)," ", type(y), " ", type(z), " ", type(t))
+#indexing a string
+index0 = stringin[0]
+index1 = stringin[1]
+print("index", index0)
+print("index", index1)
+
+
+#casting or "retyping"
+#stringin = int(stringin)
+print ("recast stringin",type(stringin))
+
+num1 = input("enter first num ")
+num2 = input("enter second num ")
+num3 = num1 + num2
+print ("num3"," ", num3)
+num4 = int(num1)+int(num2)
+print ("num4"," ", num4)
+
+
+#operations on strings
+stringin = str(stringin)
+op1 = stringin[0]
+op2 = stringin[1]
+print("op1:", type(op1),op1)
+print("op2:", type(op2),op2)
+opsum = int(op1) + int(op2)
+print("opsum:", opsum)
+# run the above with numbers as well as chars in stringin and see error.
+#operations on booleans
+x = 5
+y = 5
+result = x == y  
+# result is True because x and y have the same value
+x = True
+y = False
+result = x and y  # result is False
+
+x = True
+y = False
+result = x or y  # result is True
+
+x = True
+result = not x  # result is False
+
+x = 5
+y = 10
+result = x < y  # result is True
+my_list = [1, 2, 3]
+
+result = 2 in my_list  # result is True
+
+x = [1, 2, 3]
+y = [1, 2, 3]
+
+result = x is y  # result is False (they are two different objects)
