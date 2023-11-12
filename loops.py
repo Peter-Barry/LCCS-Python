@@ -9,7 +9,7 @@ list1=[1,2,2,2,3,4,5]
 for count in range(0,y,1):
     print("for",count)
 #########################
-# be carefule with these loops    
+# be careful with these loops    
 for count in list1:
     print("for in list", count,list1[count])
 for index, element in enumerate(list1):
