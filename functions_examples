@@ -1,3 +1,4 @@
+############################################### Area of triangle
 def calculate_rectangle_area(length, width):
     """
     Calculate the area of a rectangle.
@@ -19,3 +20,66 @@ width = float(input("Enter the width of the rectangle: "))
 # Call the function and display the result
 area_result = calculate_rectangle_area(length, width)
 print(f"The area of the rectangle is: {area_result}")
+################################################# temperature
+def celsius_to_fahrenheit(celsius):
+    """
+    Convert temperature from Celsius to Fahrenheit.
+
+    Parameters:
+    - celsius (float): Temperature in Celsius.
+
+    Returns:
+    - float: Temperature in Fahrenheit.
+    """
+    fahrenheit = (celsius * 9/5) + 32
+    return fahrenheit
+
+# Get user input for temperature in Celsius
+celsius_temp = float(input("Enter temperature in Celsius: "))
+
+# Call the function and display the result
+fahrenheit_result = celsius_to_fahrenheit(celsius_temp)
+print(f"{celsius_temp} degrees Celsius is {fahrenheit_result} degrees Fahrenheit.")
+
+
+
+############################################### Calculator
+def simple_calculator(num1, num2, operation):
+    """
+    Perform a simple arithmetic operation.
+
+    Parameters:
+    - num1 (float): First operand.
+    - num2 (float): Second operand.
+    - operation (str): Arithmetic operation ('+', '-', '*', '/').
+
+    Returns:
+    - float: Result of the operation.
+    """
+    if operation == '+':
+        result = num1 + num2
+    elif operation == '-':
+        result = num1 - num2
+    elif operation == '*':
+        result = num1 * num2
+    elif operation == '/':
+        result = num1 / num2
+    else:
+        result = None
+        print("Invalid operation!")
+
+    return result
+###################################################### Calculator
+# Get user input for numbers and operation
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+operation_input = input("Enter the operation (+, -, *, /): ")
+
+# Call the function and display the result
+calculator_result = simple_calculator(num1, num2, operation_input)
+if calculator_result is not None:
+    print(f"The result of {num1} {operation_input} {num2} is: {calculator_result}")
+
+
+
+
