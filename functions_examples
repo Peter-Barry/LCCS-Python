@@ -1,4 +1,4 @@
-############################################### Area of triangle
+############################################### ########### Mr Barry Area of triangle
 def calculate_rectangle_area(length, width):
     """
     Calculate the area of a rectangle.
